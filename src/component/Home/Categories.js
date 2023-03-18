@@ -1,6 +1,6 @@
 // this is a category file
-//another comment added for garvit
-
+//another comment added for modi
+//another comment added for modi
 import { Fragment, useState } from 'react'
 import logo from "./images/logo.png"
 import { Link } from 'react-router-dom';
