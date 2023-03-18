@@ -1,3 +1,5 @@
+// this is a category file
+
 import { Fragment, useState } from 'react'
 import logo from "./images/logo.png"
 import { Link } from 'react-router-dom';
