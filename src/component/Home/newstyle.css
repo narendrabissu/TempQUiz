@@ -1,0 +1,19 @@
+/* @media (min-width:800) {
+    #popover{
+        height: 400px;
+        overflow: auto;
+    }
+    
+} */
+
+#popover{
+    height: 400px;
+    overflow: auto;
+} 
+
+@media screen and (max-width:767px) {
+    #popover{
+        height: auto!important;
+        overflow: auto;
+    }
+}

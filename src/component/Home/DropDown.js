@@ -40,14 +40,14 @@ const DropDown = () => {
                     } `}
             >
                 <div className="flex items-center px-2 sticky top-0 bg-white">
-                    <AiOutlineSearch size={18} className="text-gray-700" />
-                    <input
-                        type="text"
+                    {/* <AiOutlineSearch size={18} className="text-gray-700" /> */}
+                    {/* <input
+                        type="text" 
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value.toLowerCase())}
                         placeholder="Enter category name"
                         className="placeholder:text-gray-700 p-2 outline-none"
-                    />
+                    /> */}
                 </div>
                 {categoryList?.map((category) => (
                     <Link to={`/quizzes/${category}`}><li

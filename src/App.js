@@ -7,8 +7,14 @@ import HomePage from "./component/Home/HomePage";
 import StartQuiz from "./component/Home/StartQuiz";
 import DropDown from "./component/Home/DropDown";
 import Navbar from "./component/Home/Navbar";
+import Navbar1 from "./component/Home/Navbar1";
+import Hero from "./component/Home/Hero";
 // import Dropdown from "./component/Home/Dropdown";
 // import Navbar from "./component/Home/Navbar";
+import newQuizCategory from "./component/Home/newQuizCategory";
+// import footer from "./component/Home/Footer";
+import Footer from "./component/Home/Footer";
+import Categories from "./component/Home/Categories";
 
 
 const App = () => {
@@ -16,14 +22,17 @@ const App = () => {
     {/* <AllQuiz/> */}
     
     {/* <Dropdown/> */}
-    <Navbar/>
+    {/* <Navbar1/> */}
+    <Categories/>
+    <Hero/>
+   
   <Routes>
     <Route exact path = '/' element = {<HomePage />} />
   <Route exact path="/quizzes/:category"  element = {<QuizCategory />} />
   <Route exact path="/quizzes/:category/:name"  element = {<StartQuiz />} />
   </Routes>
     
-   
+  <Footer />
     </>
     
   )
