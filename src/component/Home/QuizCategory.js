@@ -5,9 +5,9 @@ import Quiz from "./quizApi.js";
 import QuizCard from "./QuizCard";
 import newCard from "./newCard.js";
 import Pagination from "./Pagination";
-import AllQuiz from "./AllQuiz"
+// import AllQuiz from "./AllQuiz"
 import "./style.css";
-import DropDown from "./DropDown.js";
+// import DropDown from "./DropDown.js";
 
 
 
@@ -66,15 +66,7 @@ const QuizCategory = () => {
         <h2>there is something to show <br></br></h2>
 
       </div>
-      <footer className="bg-gray-900 text-white py-6">
-        <div className="container mx-auto flex items-center justify-between">
-          <p className="text-sm">Copyright © 2022 Your Company</p>
-          <div className="flex items-center">
-            <a href="/#" className="text-white mr-4">Terms</a>
-            <a href="/#" className="text-white">Privacy</a>
-          </div>
-        </div>
-      </footer>
+      
 
 
 

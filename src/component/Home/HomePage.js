@@ -8,7 +8,7 @@ import Categories from "./Categories.js";
 // import Identity from "./Identity"
 
 // import DropDown from './DropDown';
-import DropDown from './DropDown'
+// import DropDown from './DropDown'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 // import footer from "./Footer.js";

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import Quiz from "./quizApi.js";
+import Quiz from "../Home/quizApi.js";
 import './style.css';
 import DropDown from './DropDown';
 

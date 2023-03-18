@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import { BiChevronDown } from "react-icons/bi";
 import { AiOutlineSearch } from "react-icons/ai";
-import Quiz from './quizApi';
+import Quiz from '../Home/quizApi';
 
 const uniqueList = [
     ...new Set(

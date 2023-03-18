@@ -16,54 +16,62 @@ const QuizCard = ({ quizData }) => {
     <>
       <div class="container my-12 mx-auto px-4 md:px-12">
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
-          <div class="my-1 px-1 w-full md:-1/2 lg:my-4 lg:px-4 lg:w-1/3">
 
-            <div className="grid grid-cols-4  max-w-screen-lg mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            <article class="overflow-hidden rounded-lg shadow-lg">
 
-<a href="#">
+          {quizData.map((item, index) => {
+            const { image, category, name } = item;
+            return <>
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3" key={index}>
+
+
+<article class="overflow-hidden rounded-lg shadow-lg">
+
+  <a href="#">
     <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random" />
-</a>
+  </a>
 
-<header class="flex items-center justify-between leading-tight p-2 md:p-4">
+  <header class="flex items-center justify-between leading-tight p-2 md:p-4">
     <h1 class="text-lg">
-        <a class="no-underline hover:underline text-black" href="#">
-            Article Title
-        </a>
+      <a class="no-underline hover:underline text-black" href="#">
+        {item.name}
+      </a>
     </h1>
     <p class="text-grey-darker text-sm">
-        11/1/19
+      11/1/19
     </p>
-</header>
+  </header>
 
-<footer class="flex items-center justify-between leading-none p-2 md:p-4">
+  <footer class="flex items-center justify-between leading-none p-2 md:p-4">
     <a class="flex items-center no-underline hover:underline text-black" href="#">
-        <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random" />
-        <p class="ml-2 text-sm">
-            Author Name
-        </p>
+
+      <p class="ml-2 text-sm">
+        {item.category}
+      </p>
     </a>
     <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-        <span class="hidden">Like</span>
-        <i class="fa fa-heart"></i>
+      <span class="hidden">Like</span>
+      <i class="fa fa-heart"></i>
     </a>
-</footer>
+  </footer>
 
 </article>
 
 
-               </div>
+</div>
 
 
-          </div>
+
+            </>
+            
+            
+
+
+
+          })}
+
 
         </div>
-
       </div>
-
-
-
-
 
 
     </>
