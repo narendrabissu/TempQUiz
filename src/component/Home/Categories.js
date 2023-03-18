@@ -1,4 +1,5 @@
 // this is a category file
+//another comment added for garvit
 
 import { Fragment, useState } from 'react'
 import logo from "./images/logo.png"
